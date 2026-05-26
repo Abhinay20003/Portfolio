@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, MapPin, ExternalLink, Code2, BrainCircuit, Server, Rocket, Award, BriefcaseBusiness } from "lucide-react";
+import { Mail, MapPin, ExternalLink, Code2, BrainCircuit, Server, Rocket, Award, BriefcaseBusiness } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -168,12 +168,17 @@ export default function Portfolio() {
               <Button className="rounded-2xl bg-cyan-400 px-6 text-slate-950 hover:bg-cyan-300">
                 <Mail className="mr-2 h-4 w-4" /> Contact Me
               </Button>
-              <Button variant="outline" className="rounded-2xl border-slate-700 bg-slate-900/50 px-6 text-slate-100 hover:bg-slate-800">
-                <Github className="mr-2 h-4 w-4" /> GitHub
-              </Button>
-              <Button variant="outline" className="rounded-2xl border-slate-700 bg-slate-900/50 px-6 text-slate-100 hover:bg-slate-800">
-                <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
-              </Button>
+              <a href="https://github.com/Abhinay20003" target="_blank" rel="noopener noreferrer">
+  <Button variant="outline" className="rounded-2xl border-slate-700 bg-slate-900/50 px-6 text-slate-100 hover:bg-slate-800">
+    <ExternalLink className="mr-2 h-4 w-4" /> GitHub
+  </Button>
+</a>
+
+<a href="https://www.linkedin.com/in/abhinay-kumar-nalband-1635ba1b2/" target="_blank" rel="noopener noreferrer">
+  <Button variant="outline" className="rounded-2xl border-slate-700 bg-slate-900/50 px-6 text-slate-100 hover:bg-slate-800">
+    <ExternalLink className="mr-2 h-4 w-4" /> LinkedIn
+  </Button>
+</a>
             </div>
           </motion.div>
 
