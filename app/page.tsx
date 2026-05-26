@@ -58,7 +58,9 @@ const skills = {
     "Postman",
     "Git",
   ],
-};
+} as const;
+
+type SkillGroup = keyof typeof skills;
 
 const projects = [
   {
@@ -132,7 +134,7 @@ const metrics = [
 ];
 
 export default function Portfolio() {
-  const [activeSkill, setActiveSkill] = useState("Backend & Full Stack");
+  const [activeSkill, setActiveSkill] = useState<SkillGroup>("Backend & Full Stack");
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
@@ -165,9 +167,11 @@ export default function Portfolio() {
               M.S. Computer Science student with professional Java/Spring Boot engineering experience and hands-on work in computer vision, YOLO Pose, RAG systems, and API-driven AI applications.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button className="rounded-2xl bg-cyan-400 px-6 text-slate-950 hover:bg-cyan-300">
-                <Mail className="mr-2 h-4 w-4" /> Contact Me
-              </Button>
+            <a href="mailto:abhinaykumarnalband@gmail.com">
+  <Button className="rounded-2xl bg-cyan-400 px-6 text-slate-950 hover:bg-cyan-300">
+    <Mail className="mr-2 h-4 w-4" /> Contact Me
+  </Button>
+</a>
               <a href="https://github.com/Abhinay20003" target="_blank" rel="noopener noreferrer">
   <Button variant="outline" className="rounded-2xl border-slate-700 bg-slate-900/50 px-6 text-slate-100 hover:bg-slate-800">
     <ExternalLink className="mr-2 h-4 w-4" /> GitHub
@@ -232,7 +236,11 @@ export default function Portfolio() {
                           <h3 className="text-2xl font-bold text-white">{project.title}</h3>
                         </div>
                       </div>
-                      {project.repo && <ExternalLink className="h-5 w-5 text-slate-400" />}
+                      {project.repo && (
+  <a href={project.repo} target="_blank" rel="noopener noreferrer">
+    <ExternalLink className="h-5 w-5 text-slate-400 hover:text-cyan-300" />
+  </a>
+)}
                     </div>
                     <p className="text-sm font-medium text-slate-300">{project.stack}</p>
                     <p className="mt-4 leading-7 text-slate-400">{project.description}</p>
@@ -261,7 +269,7 @@ export default function Portfolio() {
           <Card className="rounded-3xl border-slate-800 bg-slate-900/70">
             <CardContent className="p-6">
               <div className="mb-6 flex flex-wrap gap-2">
-                {Object.keys(skills).map((group) => (
+              {(Object.keys(skills) as SkillGroup[]).map((group) => (
                   <button
                     key={group}
                     onClick={() => setActiveSkill(group)}
@@ -311,9 +319,11 @@ export default function Portfolio() {
             <Button className="rounded-2xl bg-cyan-400 px-6 text-slate-950 hover:bg-cyan-300">
               <Mail className="mr-2 h-4 w-4" /> abhinaykumarnalband@gmail.com
             </Button>
-            <Button variant="outline" className="rounded-2xl border-slate-700 bg-slate-950 px-6 text-slate-100 hover:bg-slate-800">
-              <BriefcaseBusiness className="mr-2 h-4 w-4" /> Download Resume
-            </Button>
+            <a href="/Abhinay_Kumar_Resume.pdf" download>
+  <Button variant="outline" className="rounded-2xl border-slate-700 bg-slate-950 px-6 text-slate-100 hover:bg-slate-800">
+    <BriefcaseBusiness className="mr-2 h-4 w-4" /> Download Resume
+  </Button>
+</a>
           </div>
         </section>
       </main>
