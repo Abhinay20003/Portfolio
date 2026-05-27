@@ -224,19 +224,42 @@ export default function Portfolio() {
           </div>
 
           <div className="hidden gap-8 text-lg font-medium text-slate-300 md:flex">
-            <a href="#projects" className="hover:text-white">
-              Projects
-            </a>
-            <a href="#skills" className="hover:text-white">
-              Skills
-            </a>
-            <a href="#experience" className="hover:text-white">
-              Experience
-            </a>
-            <a href="#contact" className="hover:text-white">
-              Contact
-            </a>
-          </div>
+  <button
+    onClick={() =>
+      document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+    }
+    className="hover:text-white"
+  >
+    Projects
+  </button>
+
+  <button
+    onClick={() =>
+      document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })
+    }
+    className="hover:text-white"
+  >
+    Skills
+  </button>
+
+  <button
+    onClick={() =>
+      document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })
+    }
+    className="hover:text-white"
+  >
+    Experience
+  </button>
+
+  <button
+    onClick={() =>
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+    }
+    className="hover:text-white"
+  >
+    Contact
+  </button>
+</div>
         </nav>
 
         <section className="grid items-start gap-8 lg:grid-cols-[1fr_1fr]">
