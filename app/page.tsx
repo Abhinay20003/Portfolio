@@ -124,6 +124,7 @@ const projects = [
     title: "Emotive Chatbot",
     category: "NLP Application",
     icon: <Code2 className="h-5 w-5" />,
+    repo: "https://github.com/Abhinay20003/Sentiment_aware_chatbot",
     stack: "Python · Flask · React · NLP · Sentiment140 · scikit-learn",
     description:
       "Emotion-aware chatbot that classifies user sentiment patterns and returns response flows through a Flask API and React interface.",
@@ -140,14 +141,14 @@ const experience = [
   {
     role: "Graduate Research Assistant",
     org: "Texas A&M University–Corpus Christi",
-    date: "Aug 2025 – Present",
+    date: "Aug 2025 – May 2026",
     summary:
       "Building computer vision workflows for fish and shrimp detection, pose estimation, annotation pipelines, body measurement, and reproducible ML experiments.",
   },
   {
-    role: "Graduate Assistant — Web & Technical Support",
+    role: "Graduate Assistant -  Web & Technical Support",
     org: "Texas A&M University–Corpus Christi",
-    date: "Sep 2024 – Jun 2025",
+    date: "Sep 2024 – May 2025",
     summary:
       "Maintained departmental web pages, improved layouts and navigation, validated content updates, fixed page issues, and supported student-facing academic web content.",
   },
@@ -701,7 +702,7 @@ export default function Portfolio() {
     </div>
 
     <p className="mt-6 text-sm text-slate-500">
-      Based in Corpus Christi, Texas · Available for full-stack, backend,
+    Available for full-stack, backend,
       software engineering, and AI application opportunities.
     </p>
   </div>
