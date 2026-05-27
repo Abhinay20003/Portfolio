@@ -614,10 +614,9 @@ export default function Portfolio() {
             ))}
           </div>
         </section>
-
         <section
   id="contact"
-  className="mt-20 overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 p-8 text-center shadow-2xl"
+  className="mt-20 overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/80 p-6 text-center shadow-2xl sm:p-8"
 >
   <div className="mx-auto max-w-4xl">
     <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-3xl border border-cyan-400/30 bg-cyan-400/10">
@@ -628,54 +627,60 @@ export default function Portfolio() {
       Let’s Connect
     </p>
 
-    <h2 className="mt-4 text-4xl font-black leading-tight md:text-5xl">
+    <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
       Open to Java Full Stack, Software Engineering, and AI/ML roles.
     </h2>
 
-    <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-slate-400">
+    <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-slate-400 md:text-lg">
       I am interested in roles where I can build reliable full-stack
       applications, backend APIs, AI-powered systems, and production-ready
       software that is clean, tested, and useful.
     </p>
 
     <div className="mx-auto mt-8 grid max-w-3xl gap-4 md:grid-cols-3">
-  <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
-    <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
-      Core Focus
-    </p>
-    <p className="mt-2 text-base font-bold text-white">
-      Java Full Stack Engineering
-    </p>
-  </div>
+      <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
+        <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
+          Core Focus
+        </p>
+        <p className="mt-2 text-base font-bold text-white">
+          Java Full Stack Engineering
+        </p>
+      </div>
 
-  <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
-    <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
-      Software Strength
-    </p>
-    <p className="mt-2 text-base font-bold text-white">
-      Backend APIs & Microservices
-    </p>
-  </div>
+      <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
+        <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
+          Software Strength
+        </p>
+        <p className="mt-2 text-base font-bold text-white">
+          Backend APIs & Microservices
+        </p>
+      </div>
 
-  <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
-    <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
-      AI Direction
-    </p>
-    <p className="mt-2 text-base font-bold text-white">
-      ML / AI Applications
-    </p>
-  </div>
-</div>
+      <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
+        <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
+          AI Direction
+        </p>
+        <p className="mt-2 text-base font-bold text-white">
+          ML / AI Applications
+        </p>
+      </div>
+    </div>
 
-    <div className="mt-8 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 p-5">
+    <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-cyan-400/20 bg-cyan-400/10 p-5">
       <p className="text-sm text-slate-400">Reach me at</p>
+
       <a
         href="mailto:abhinaykumarnalband@gmail.com"
-        className="mt-2 inline-block text-xl font-bold text-cyan-300 hover:text-cyan-200"
+        className="mx-auto mt-2 block max-w-full overflow-hidden text-ellipsis whitespace-nowrap text-base font-bold text-cyan-300 hover:text-cyan-200 sm:text-xl"
       >
         abhinaykumarnalband@gmail.com
       </a>
     </div>
+
+    <p className="mt-6 text-sm text-slate-500">
+      Based in Corpus Christi, Texas · Available for full-stack, backend,
+      software engineering, and AI application opportunities.
+    </p>
   </div>
 </section>
       </main>
