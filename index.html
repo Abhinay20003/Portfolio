@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Abhinay Kumar Nalband — Software Engineer portfolio" />
+  <meta name="theme-color" content="#0b0b0b" id="themeColorMeta" />
+  <script>
+    (function () {
+      const saved = localStorage.getItem('theme');
+      const preferred = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = saved || preferred;
+    })();
+  </script>
+  <title>Abhinay Kumar Nalband — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-name">ABHINAY KUMAR NALBAND</div>
+    <div class="loader-line"><i></i></div>
+    <div class="loader-count">01 / 05</div>
+  </div>
+  <div class="noise"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <header class="nav shell">
+    <a class="brand magnetic" href="#top">ABHINAY KUMAR NALBAND</a>
+    <nav>
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a
+        href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle magnetic" id="themeToggle" type="button" aria-label="Switch to light mode"
+        title="Toggle light / dark mode">
+        <span class="sun" aria-hidden="true">☀</span><span class="moon" aria-hidden="true">☾</span>
+      </button>
+      <a class="round-link magnetic" href="mailto:abhinaykumarnalband@gmail.com" aria-label="Email Abhinay">↗</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow intro-up">HI, I'M ABHINAY KUMAR NALBAND.</p>
+        <h1 class="intro-title"><span class="line"><span>SOFTWARE</span></span><span
+            class="line outline"><span>ENGINEER</span></span></h1>
+        <p class="hero-kicker intro-up delay-1">I build reliable backend systems, polished full-stack products, and
+          AI-powered experiences.</p>
+        <div class="hero-actions intro-up delay-2">
+          <a class="btn btn-light magnetic" href="#projects">View work</a>
+          <a class="btn magnetic" href="mailto:abhinaykumarnalband@gmail.com">Let's talk ↗</a>
+        </div>
+        <div class="hero-meta intro-up delay-3">
+          <p class="availability"><span></span> OPEN TO SOFTWARE ENGINEERING OPPORTUNITIES</p>
+          <p>Corpus Christi, Texas · USA</p>
+        </div>
+      </div>
+
+      <div class="portrait-wrap intro-photo">
+        <figure class="portrait-card" aria-label="Portrait of Abhinay Kumar Nalband">
+          <img src="assets/abhinay-portrait.jpg" alt="Abhinay Kumar Nalband" />
+          <div class="portrait-shade"></div>
+          <div class="portrait-grid"></div>
+          <div class="portrait-label top"><span>FULL STACK / BACKEND</span><span>2026</span></div>
+          <figcaption class="portrait-caption"><span>JAVA • SPRING BOOT • REACT • AI/ML</span><span>01</span>
+          </figcaption>
+        </figure>
+        <div class="floating-chip c-java">JAVA</div>
+        <div class="floating-chip c-ai">AI / ML</div>
+        <div class="floating-chip c-spring">SPRING</div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div>BACKEND ENGINEERING — FULL STACK DEVELOPMENT — AI / COMPUTER VISION — CLOUD & DEVOPS — </div>
+    </div>
+
+    <section class="statement shell reveal" id="about">
+      <p class="section-tag">ABOUT / 01</p>
+      <h2>I DESIGN AND BUILD<br><span>SCALABLE SYSTEMS.</span></h2>
+      <div class="about-grid">
+        <p>Software Engineer with 2+ years of industry experience designing Java backend applications, RESTful APIs,
+          database-driven systems, and maintainable full-stack products.</p>
+        <p>My work spans Spring Boot microservices, React/Angular interfaces, SQL, Docker, cloud workflows, and research
+          prototypes in computer vision and retrieval-augmented generation.</p>
+      </div>
+    </section>
+
+    <section class="skills-band reveal">
+      <div class="shell">
+        <div class="band-head">
+          <p class="section-tag">CORE STACK / TOOLKIT</p><span>SCROLL TO EXPLORE ↓</span>
+        </div>
+        <div class="chips">
+          <span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>Spring
+            Security</span><span>Microservices</span><span>REST APIs</span><span>Hibernate /
+            JPA</span><span>Python</span><span>React.js</span><span>Angular</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span><span>MySQL</span><span>PostgreSQL</span><span>Docker</span><span>Azure</span><span>Jenkins</span><span>GitHub
+            Actions</span><span>OpenCV</span><span>YOLO</span><span>RAG</span><span>ChromaDB</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience shell reveal" id="experience">
+      <div class="section-head">
+        <p class="section-tag">EXPERIENCE / 02</p>
+        <h2>WHERE I'VE<br>BUILT & LEARNED.</h2>
+      </div>
+      <div class="timeline">
+        <article class="exp-row">
+          <div class="when">JAN 2023 — AUG 2024</div>
+          <div>
+            <h3>Associate Software Engineer</h3>
+            <p class="company">DXC Technologies</p>
+            <p>Built Java/Spring Boot services, REST APIs, database workflows, Dockerized microservices, testing
+              pipelines, and production-ready features in Agile teams.</p>
+          </div><span class="index">01</span>
+        </article>
+        <article class="exp-row">
+          <div class="when">AUG 2025 — MAY 2026</div>
+          <div>
+            <h3>Graduate Research Assistant</h3>
+            <p class="company">Texas A&M University</p>
+            <p>Developed computer-vision workflows with Python, OpenCV, YOLO Pose, CVAT, and GPU computing for
+              aquatic-animal detection, pose estimation, tracking, and experiment analysis.</p>
+          </div><span class="index">02</span>
+        </article>
+        <article class="exp-row">
+          <div class="when">DEC 2024 — MAY 2025</div>
+          <div>
+            <h3>Graduate Assistant — Web & Technical Support</h3>
+            <p class="company">Texas A&M University</p>
+            <p>Maintained departmental web pages, improved layouts and accessibility, performed QA, troubleshot
+              technical issues, and coordinated web updates with university stakeholders.</p>
+          </div><span class="index">03</span>
+        </article>
+        <article class="exp-row">
+          <div class="when">JAN 2022 — JUN 2022</div>
+          <div>
+            <h3>Technical Intern</h3>
+            <p class="company">Rakuten Pvt. Ltd.</p>
+            <p>Supported cloud application features, defect resolution, REST API testing, release validation, and
+              development / QA collaboration during Agile sprints.</p>
+          </div><span class="index">04</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects shell reveal" id="projects">
+      <div class="section-head">
+        <p class="section-tag">FEATURED WORK / 03</p>
+        <h2>SELECTED<br><span>WORK.</span></h2>
+      </div>
+      <div class="project-grid project-grid-four">
+        <a class="project-card project-a magnetic-card" href="https://github.com/Abhinay20003/AOS-Ecom" target="_blank"
+          rel="noreferrer">
+          <div class="project-top"><span>01 / FULL STACK</span><span>↗</span></div>
+          <div class="project-visual ecommerce-photo"><img src="assets/ecommerce.jpg"
+              alt="3D e-commerce shopping illustration" loading="lazy">
+            <div class="image-sheen"></div>
+          </div>
+          <h3>MICRO-ECOMMERCE</h3>
+          <p>Full-stack commerce platform using Spring Boot microservices and Angular, with JWT authentication,
+            product/cart/order APIs, Eureka service discovery, Docker, testing and MySQL.</p>
+          <div class="mini-tags"><span>JAVA</span><span>SPRING BOOT</span><span>ANGULAR</span><span>DOCKER</span></div>
+        </a>
+        <a class="project-card project-b magnetic-card" href="https://github.com/PushkarSikharam/Talk2Campus"
+          target="_blank" rel="noreferrer">
+          <div class="project-top"><span>02 / AI + FULL STACK</span><span>↗</span></div>
+          <div class="project-visual campus">
+            <div class="orb"></div>
+            <div class="radar"></div>
+            <div class="chat c1">Where is the library?</div>
+            <div class="chat c2">I can help you navigate campus.</div>
+          </div>
+          <h3>TALK2CAMPUS</h3>
+          <p>AI-powered campus assistant with React, FastAPI, RAG, ChromaDB, LLM APIs, web scraping, WhisperX voice
+            interaction and Google Maps integration.</p>
+          <div class="mini-tags"><span>REACT</span><span>FASTAPI</span><span>RAG</span><span>CHROMADB</span></div>
+        </a>
+        <article class="project-card project-c magnetic-card">
+          <div class="project-top"><span>03 / COMPUTER VISION</span><span>RESEARCH</span></div>
+          <div class="project-visual vision">
+            <div class="vision-frame">
+              <div class="fish-shape"></div><i class="point p1"></i><i class="point p2"></i><i class="point p3"></i><i
+                class="scanline"></i><span class="tracking-label">TRACKING / POSE</span>
+            </div>
+          </div>
+          <h3>AQUATIC VISION RESEARCH</h3>
+          <p>Computer-vision research for fish and shrimp detection, pose estimation, tracking and dataset preparation
+            using Python, OpenCV, YOLO Pose, CVAT and GPU-accelerated workflows.</p>
+          <div class="mini-tags"><span>PYTHON</span><span>OPENCV</span><span>YOLO POSE</span><span>CVAT</span></div>
+        </article>
+        <article class="project-card project-d magnetic-card">
+          <div class="project-top"><span>04 / WEB EXPERIENCE</span><span>TAMU</span></div>
+          <div class="project-visual web-support">
+            <div class="web-window">
+              <div class="web-top"><i></i><i></i><i></i></div>
+              <div class="web-layout"><span></span><b></b><em></em><small></small></div>
+            </div>
+            <div class="qa-badge">QA ✓</div>
+          </div>
+          <h3>UNIVERSITY WEB & TECHNICAL</h3>
+          <p>Maintained and enhanced departmental web pages, improved layouts and accessibility, resolved content
+            issues, performed quality assurance and supported stakeholder-driven web updates.</p>
+          <div class="mini-tags"><span>FRONTEND</span><span>ACCESSIBILITY</span><span>QA</span><span>SUPPORT</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="education shell reveal">
+      <p class="section-tag">EDUCATION / 04</p>
+      <div class="edu-grid">
+        <article><span>2024 — 2026</span>
+          <h3>MS, Computer Science</h3>
+          <p>Texas A&M University, USA</p><strong>GPA 4.0 / 4.0</strong>
+        </article>
+        <article><span>BACHELOR'S</span>
+          <h3>B.Tech, Computer Science</h3>
+          <p>Vignan Institute of Technology and Science, India</p><strong>GPA 8.0 / 10</strong>
+        </article>
+        <article><span>CERTIFICATION</span>
+          <h3>Azure Fundamentals</h3>
+          <p>Microsoft AZ-900</p><strong>Issued 2023</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact shell reveal" id="contact">
+      <p class="section-tag">CONTACT / 05</p>
+      <h2>LET'S BUILD<br><span>SOMETHING GREAT.</span></h2>
+      <div class="contact-row">
+        <a href="mailto:abhinaykumarnalband@gmail.com">abhinaykumarnalband@gmail.com ↗</a>
+        <div class="socials"><a href="https://www.linkedin.com/in/abhinay-kumar-nalband-1635ba1b2/" target="_blank"
+            rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Abhinay20003" target="_blank"
+            rel="noreferrer">GitHub ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell"><span>© <span id="year"></span> ABHINAY KUMAR NALBAND</span><a href="#top">BACK TO TOP ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
